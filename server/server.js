@@ -14,7 +14,7 @@ app.use(cors({
 app.use(express.json());
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require('./ecspro-268aa-firebase-adminsdk-scq2d-b0d7db60f3.json'); // Download from Firebase Console
+const serviceAccount = require('');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://ecspro-268aa-default-rtdb.firebaseio.com/"
