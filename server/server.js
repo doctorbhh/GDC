@@ -21,7 +21,7 @@ admin.initializeApp({
 });
 
 const db = admin.database();
-const genAI = new GoogleGenerativeAI("AIzaSyDBB4U6EIcAucMna4O3koapaOpCjRQeDbo"); // Replace with your Gemini API key
+const genAI = new GoogleGenerativeAI(""); // Replace with your Gemini API key
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 app.post('/api/gemini', async (req, res) => {
