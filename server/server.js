@@ -5,11 +5,7 @@ const admin = require('firebase-admin');
 
 const app = express();
 
-app.use(cors({
-    origin: 'http://127.0.0.1:5500', // Match your client’s origin
-    methods: ['POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type']
-}));
+
 
 app.use(express.json());
 
@@ -17,7 +13,7 @@ app.use(express.json());
 const serviceAccount = require('');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://ecspro-268aa-default-rtdb.firebaseio.com/"
+    databaseURL: ""
 });
 
 const db = admin.database();
